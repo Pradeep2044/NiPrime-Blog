@@ -1,0 +1,84 @@
+.notepad-icon {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgb(77, 92, 255);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.notepad-icon:hover{
+    background: hsl(231, 98%, 56%);
+    transition: .5s;
+}
+.notepad-icon::before {
+    content: '\270F'; /* Unicode for pencil */
+    font-size: 24px;
+    color: white;
+}
+
+.notepad {
+    position: fixed;
+    top: 50%;
+    right: 80px;
+    width: 300px;
+    height: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-50%);
+}
+
+.notepad textarea {
+    flex: 1;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.notepad-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notepad-buttons button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.save-btn {
+    background-color: #1b887b;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #9c7206;
+    color: white;
+}
+
+.clear-btn {
+    background-color: #d33a13;
+    color: white;
+}
+
+.draggable {
+    cursor: grab;
+}

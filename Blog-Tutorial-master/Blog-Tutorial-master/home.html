@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiPrime Blog</title>
+    <link rel="icon" type="image/png" href="../images/np-logo.png">
+    <!-- Box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Menu-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="../css/recent-post.css">
+    <link rel="stylesheet" href="/css/notepad.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav containerr">
+            <a href="../html/home.html" class="logo">NiPrime <span>blog</span></a>
+            <ul class="flex aboutus">
+                <li>
+                    <a href="#" class="hidd sdw">Home</a>
+                </li>
+                <li>
+                    <a href="/html/rich-text.html" class=" hidd sdw">Write Blog</a>
+                </li>
+                <li>
+                    <a href="#About" class="hidd sdw">About Me</a>
+                </li>
+                <li>
+                    <a href="#recentPost" class=" hidd sdw">Recent Post</a>
+                </li>
+            </ul>
+            <div class="searchbarobj flex">
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="clicksearch">
+                        <form action="#" id="search-form">
+                            <input type="text" class="control-form" placeholder="search title">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <div id="alert-message" class="alert-message"></div>
+                        </form>
+                        <div class="tegger">
+                            <h3>Popular tags</h3>
+                            <div class="tags">
+                                <a href="#" class="category-link" data-category="travel">#Travel <span>,</span></a>
+                                <a href="#" class="category-link" data-category="lifestyle">#LifeStyle
+                                    <span>,</span></a>
+                                <a href="#" class="category-link" data-category="news">#News <span>,</span></a>
+                                <a href="#" class="category-link" data-category="tech">#Tech</a>
+                            </div>
+                        </div>
+                        <div id="suggestion-box" class="suggestion-box"></div>
+                    </div>
+                    <a href="/html/login.html" class="login hidd">Login</a>
+                    <div class="toggle-btn flex">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li class="tags"><a class="dropdown-item" href="/home.html">Home</a></li>
+                        <li class="tags"><a class="dropdown-item" href="#About">About</a></li>
+                        <li class="tags"><a class="dropdown-item" href="#recentPost">Recent Post</a></li>
+                        <li class="tags"><a class="dropdown-item" href="./html/login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">Prime Blogger</h2>
+            <span class="home-subtitle">Unleashing Great Content, Just for You</span>
+        </div>
+    </section>
+
+
+
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">All</span>
+        <span class="filter-item" data-filter="tech">Tech</span>
+        <span class="filter-item" data-filter="lifestyle">LifeStyle</span>
+        <span class="filter-item" data-filter="travel">Travel</span>
+        <span class="filter-item" data-filter="news">News</span>
+    </div>
+
+    <div class="post container">
+        <!--(i) Lifestyle Post 1 -->
+        <div class="post-box lifestyle" data-url="../html/pages-html/1.page.html">
+            <img src="/images/pages-img/a.png" alt="" class="post-img">
+            <h2 class="category">LifeStyle</h2>
+            <h3 class="post-title">Breathe & Stretch Yoga for Inner Peace</h3>
+            <span class="post-date">10 jan 2025</span>
+            <p class="post-description">Breathe & Stretch: Yoga for Inner Peace" offers a sanctuary where you can
+                reconnect with your body and mind through the art of mindful movement and conscious breathing.</p>
+            <div class="profile">
+                <img src="/images/Aiku Oliver.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Kalki</span>
+            </div>
+        </div>
+        <!--(ii) tech Post 1 -->
+        <div class="post-box tech" data-url="../html/pages-html/13.page.html">
+            <img src="../images/pages-img/m.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <h3 class="post-title">Redefining Open Source To Make AI Fit Sparks Unsettled Debate</h3>
+            <span class="post-date">January 10, 2025</span>
+            <p class="post-description">The concept of open-source software has long been celebrated for its role in
+                fostering collaboration and innovation. Open-source projects are typically available for anyone to view,
+                modify, and distribute, promoting transparency and collective development.</p>
+            <div class="profile">
+                <img src="/images/bachira.jpeg" alt="" class="profile-img">
+                <span class="profile-name">mahesh</span>
+            </div>
+        </div>
+        <!-- (iii) Lifestyle Post 2 -->
+        <div class="post-box lifestyle" data-url="../html/pages-html/2.page.html">
+            <img src="/images/pages-img/b.png" alt="" class="post-img">
+            <h2 class="category">LifeStyle</h2>
+            <h3 href="/html/pages-html/2.page.html" class="post-title">>Heart and Sole: The Benefits of Running for
+                Total Wellnes</h3>
+            <span class="post-date">January 11, 2025</span>
+            <p class="post-description">In the hustle and bustle of daily life, finding a moment of tranquility can feel
+                elusive. "Breathe & Stretch: Yoga for Inner Peace" offers a sanctuary where you can reconnect with your
+                body and mind through the art of mindful movement and conscious breathing.</p>
+            <div class="profile">
+                <img src="/images/isagi1.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Vishnu</span>
+            </div>
+        </div>
+        <!--(iv) News Post 1 -->
+        <div class="post-box news" data-url="../html/pages-html/19.page.html">
+            <img src="../images/pages-img/s.avif" alt="" class="post-img">
+            <h2 class="category">News</h2>
+            <h3 class="post-title">Bangladesh summons Indian envoy over border tensions</h3>
+            <span class="post-date">January 11, 2025</span>
+            <p class="post-description">Bangladesh recently summoned the Indian envoy to address rising tensions along
+                their shared border, a matter that has increasingly become a point of concern for both nations.</p>
+            <div class="profile">
+                <img src="/images/isagi2.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Brahma</span>
+            </div>
+        </div>
+        <!--(v) Tech Post 2 -->
+        <div class="post-box tech" data-url="../html/pages-html/14.page.html">
+            <img src="../images/pages-img/n.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <h3 class="post-title">The first Robotic Wave at CES 2025</h3>
+            <span class="post-date">5 jan 2025</span>
+            <p class="post-description">Companies are pushing the boundaries of what robots can do, integrating
+                artificial intelligence, machine learning, and advanced sensors to create more capable,.</p>
+            <div class="profile">
+                <img src="/images/isagi3.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Bhole</span>
+            </div>
+        </div>
+        <!--(vi) News Post 2 -->
+        <div class="post-box news" data-url="../html/pages-html/20.page.html">
+            <img src="../images/pages-img/t.avif" alt="" class="post-img">
+            <h2 class="category">News</h2>
+            <h3 class="post-title">Jaishankar to represent India at Donald Trump’s swearing-in as US President</h3>
+            <span class="post-date">January 3, 2025</span>
+            <p class="post-description">India’s Foreign Secretary at the time, S. Jaishankar, represented the nation at
+                Donald Trump’s swearing-in ceremony as the 45th President of the United States.</p>
+            <div class="profile">
+                <img src="/images/isagi4.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Vedagarbha</span>
+            </div>
+        </div>
+        <!--(vii) Tech Post 3 -->
+        <div class="post-box tech" data-url="../html/pages-html/15.page.html">
+            <img src="../images/pages-img/o.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <h3 class="post-title">AMD and Copilot+ Set the Stage for Xbox AI</h3>
+            <span class="post-date">January 9, 2025</span>
+            <p class="post-description">Copilot+ AI, designed to complement Xbox consoles, is focused on enhancing the
+                player's gaming experience through real-time data processing and machine learning. By utilizing AI, the
+                system can offer smarter in-game assistance,</p>
+            <div class="profile">
+                <img src="/images/Kaiser.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Ganesh</span>
+            </div>
+        </div>
+        <!--(viii) Travel Post 1 -->
+        <div class="post-box travel" data-url="../html/pages-html/7.page.html">
+            <img src="../images/pages-img/g.webp" alt="" class="post-img">
+            <h2 class="category">Travel</h2>
+            <a href="#" class="post-title">How To See Bangkok In 3 Days</a>
+            <span class="post-date">January 11, 2025</span>
+            <p class="post-description">Bangkok, Thailand's vibrant capital, is known for its bustling streets, ornate
+                temples, and diverse cultural attractions. To make the most of a 3-day trip, it’s best to start with the
+                iconic temples and landmarks.</p>
+            <div class="profile">
+                <img src="/images/kurona.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Narada</span>
+            </div>
+        </div>
+        <!--(ix) travel Post 2 -->
+        <div class="post-box travel" data-url="../html/pages-html/8.page.html">
+            <img src="../images/pages-img/h.webp" alt="" class="post-img">
+            <h2 class="category">Travel</h2>
+            <a href="#" class="post-title">The Most Beautiful River Cities</a>
+            <span class="post-date">January 16, 2025</span>
+            <p class="post-description">River cities possess a unique charm’s gentle flow through the heart of the city
+                creates a romantic ambiance, especially when the sun sets and the city lights begin to twinkle.</p>
+            <div class="profile">
+                <img src="/images/nagi.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Devarshi</span>
+            </div>
+        </div>
+
+
+        <!--###### Lefted lifestyle post ###### -->
+
+        <!-- (xiii) Lifestyle post 3 -->
+        <div class="post-box lifestyle" data-url="../html/pages-html/3.page.html">
+            <img src="/images/pages-img/c.png" alt="" class="post-img">
+            <h2 class="category">LifeStyle</h2>
+            <h3 class="post-title">How to create the best UI with Figma</h3>
+            <span class="post-date">January 11, 2025</span>
+            <p class="post-description">Water is essential to every function in the body, making hydration a cornerstone
+                of overall health. Our bodies are made up of approximately 60% water, which plays a vital role in
+                regulating temperature, cushioning joints, and maintaining cellular functions.</p>
+            <div class="profile">
+                <img src="/images/nagi.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Kali</span>
+            </div>
+        </div>
+        <!-- (xiv) Lifestyle post 4 -->
+        <div class="post-box lifestyle" data-url="../html/pages-html/4.page.html">
+            <img src="/images/pages-img/d.png" alt="" class="post-img">
+            <h2 class="category">LifeStyle</h2>
+            <h3 class="post-title">Fitness Unleashed: Transform Your Body and Mind</h3>
+            <span class="post-date">January 1, 2025</span>
+            <p class="post-description">Fitness is more than just an avenue for physical change; it’s a powerful tool
+                that can transform both the body and the mind. Regular exercise helps build strength, endurance, and
+                flexibility, leading to a more toned and healthier body.</p>
+            <div class="profile">
+                <img src="/images/nagi.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Kanha</span>
+            </div>
+        </div>
+        <!-- (xv) Lifestyle post 5 -->
+        <div class="post-box lifestyle" data-url="../html/pages-html/5.page.html">
+            <img src="/images/pages-img/e.png" alt="" class="post-img">
+            <h2 class="category">LifeStyle</h2>
+            <h3 class="post-title">Cycle Your Way to Fitness: A Path to Physical and Mental Well-Being</h3>
+            <span class="post-date">January 11, 2025</span>
+            <p class="post-description">Cycling is a dynamic and enjoyable way to improve both your physical fitness and
+                mental well-being. As a low-impact cardiovascular exercise, cycling strengthens the heart, boosts
+                endurance, and tones muscles, all while being easy on the joints.</p>
+            <div class="profile">
+                <img src="/images/nagi.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Narsimbha</span>
+            </div>
+        </div>
+        <!-- (xvi) Lifestyle post 6 -->
+        <div class="post-box lifestyle" data-url="../html/pages-html/6.page.html">
+            <img src="/images/pages-img/f.png" alt="" class="post-img">
+            <h2 class="category">LifeStyle</h2>
+            <h3 class="post-title">Eat Well, Live Well: The Connection Between Food and Lifestyle</h3>
+            <span class="post-date">January 11, 2025</span>
+            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
+                similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea
+                unde repudiandae iste architecto. Corporis, voluptates.</p>
+            <div class="profile">
+                <img src="/images/nagi.jpeg" alt="" class="profile-img">
+                <span class="profile-name">MKHB</span>
+            </div>
+        </div>
+
+
+        <!--###### Lefted travel post ###### -->
+
+        <!-- (xiii) travel post 3 -->
+        <div class="post-box travel" id="travelBlog" data-url="../html/pages-html/9.page.html">
+            <img src="/images/pages-img/i.webp" alt="" class="post-img">
+            <h2 class="category">Travel</h2>
+            <h3 class="post-title">People, Nature and Everyday Life</h3>
+            <span class="post-date">January 13, 2025</span>
+            <p class="post-description">People, nature, and everyday life are intricately connected in a harmonious
+                cycle that shapes the way we experience the world. Nature provides the backdrop for daily human
+                activities, influencing our routines, health, and well-being.</p>
+            <div class="profile">
+                <img src="/images/nagi.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Hanuman</span>
+            </div>
+        </div>
+        <!-- (xiv) travel post 4 -->
+        <div class="post-box travel" data-url="../html/pages-html/10.page.html">
+            <img src="/images/pages-img/j.webp" alt="" class="post-img">
+            <h2 class="category">Travel</h2>
+            <h3 class="post-title">How to Get Paid to Travels?</h3>
+            <span class="post-date">January 1, 2025</span>
+            <p class="post-description">Getting paid to travel is an exciting and achievable goal for many people,
+                though it requires creativity, resourcefulness, and dedication. One popular way to earn money while
+                exploring the world is by becoming a travel blogger or content creator.</p>
+            <div class="profile">
+                <img src="/images/nagi.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Karn</span>
+            </div>
+        </div>
+        <!-- (xv) travel post 5 -->
+        <div class="post-box travel" data-url="../html/pages-html/11.page.html">
+            <img src="/images/pages-img/k.webp" alt="" class="post-img">
+            <h2 class="category">Travel</h2>
+            <h3 class="post-title">7 Perfect Day Tripsin Europe</h3>
+            <span class="post-date">January 11, 2025</span>
+            <p class="post-description">Europe offers a wealth of breathtaking destinations perfect for day trips, each
+                providing unique experiences and unforgettable views. One of the best day trips is from Paris to the
+                Palace of Versailles.</p>
+            <div class="profile">
+                <img src="/images/nagi.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Bheem</span>
+            </div>
+        </div>
+        <!-- (xvi) travel post 6 -->
+        <div class="post-box travel" data-url="../html/pages-html/12.page.html">
+            <img src="/images/pages-img/l.webp" alt="" class="post-img">
+            <h2 class="category">Travel</h2>
+            <h3 class="post-title">How to Enjoy Your Solo Trip</h3>
+            <span class="post-date">January 10, 2025</span>
+            <p class="post-description">For those staying in Barcelona, a day trip to the stunning Montserrat Mountain
+                is highly recommended. About an hour’s drive from the city, Montserrat offers dramatic landscapes and is
+                home to a centuries-old monastery.</p>
+            <div class="profile">
+                <img src="/images/nagi.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Ram</span>
+            </div>
+        </div>
+
+        <!--###### Lefted tech post ###### -->
+
+        <!--(x) Tech Post 4 -->
+        <div class="post-box tech" data-url="../html/pages-html/16.page.html">
+            <img src="../images/pages-img/p.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <h3 class="post-title">Apple Addresses Apple Intelligence: What Microsoft Missed With Copilot</h3>
+            <span class="post-date">January 8, 2025</span>
+            <p class="post-description">Apple’s recent focus on enhancing its AI capabilities through "Apple
+                Intelligence" demonstrates the company’s commitment to integrating smarter features into its ecosystem,
+                contrasting with Microsoft’s Copilot.</p>
+            <div class="profile">
+                <img src="/images/Kaiser.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Kartik</span>
+            </div>
+        </div>
+
+        <!--(xi) Tech Post 5 -->
+        <div class="post-box tech" data-url="../html/pages-html/17.page.html">
+            <img src="../images/pages-img/r.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <h3 class="post-title">Layoff Survival Guide: Making Smart Choices in Tough Times</h3>
+            <span class="post-date">January 7, 2025</span>
+            <p class="post-description">Avigating a layoff can be one of the most challenging experiences in a person’s
+                professional life, especially during times of economic uncertainty.</p>
+            <div class="profile">
+                <img src="/images/Kaiser.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Ganesh</span>
+            </div>
+        </div>
+
+        <!--(xii) Tech Post 6 -->
+        <div class="post-box tech" data-url="../html/pages-html/18.page.html">
+            <img src="../images/pages-img/q.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <h3 class="post-title">Are Deepfakes Overblown ?</h3>
+            <span class="post-date">January 6, 2025</span>
+            <p class="post-description">Deepfakes have generated significant concern in recent years, primarily due to
+                their potential for misuse. While it’s true that the technology behind deepfakes has become increasingly
+                accessible and sophisticated, the hype surrounding them may sometimes be exaggerated. </p>
+            <div class="profile">
+                <img src="/images/Kaiser.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Nukul</span>
+            </div>
+        </div>
+
+        <!-- #####Lefted News post##### -->
+
+        <!--(xvii) News post 3  -->
+        <div class="post-box news" data-url="../html/pages-html/21.page.html">
+            <img src="/images/pages-img/u.jpg" alt="" class="post-img">
+            <h2 class="category">News</h2>
+            <h3 class="post-title">Massive fire at Noida chemical factory, no casualties</h3>
+            <span class="post-date">January 2, 2025</span>
+            <p class="post-description">A massive fire broke out at a chemical factory in Noida, Uttar Pradesh, causing
+                widespread alarm but fortunately resulting in no casualties.</p>
+            <div class="profile">
+                <img src="/images/nagi.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Chaturmukha</span>
+            </div>
+        </div>
+        <!-- (xviii) News post 4 -->
+        <div class="post-box news" data-url="../html/pages-html/22.page.html">
+            <img src="/images/pages-img/v.avif" alt="" class="post-img">
+            <h2 class="category">News</h2>
+            <h3 class="post-title">What would it take for Donald Trump to buy Greenland?</h3>
+            <span class="post-date">January 1, 2025</span>
+            <p class="post-description">The idea of Donald Trump purchasing Greenland, which he publicly floated during
+                his presidency, would require overcoming significant political, legal, and practical hurdles.</p>
+            <div class="profile">
+                <img src="/images/nagi.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Svayambhu</span>
+            </div>
+        </div>
+        <!-- (xix) News post 5 -->
+        <div class="post-box news" data-url="../html/pages-html/23.page.html">
+            <img src="/images/pages-img/w.webp" alt="" class="post-img">
+            <h2 class="category">News</h2>
+            <h3 class="post-title">>College Student Dies By Suicide in MP's Chhatarpur</h3>
+            <span class="post-date">January 14, 2025</span>
+            <p class="post-description">A tragic incident occurred in Chhatarpur, Madhya Pradesh, where a college
+                student died by suicide, leaving the community in shock and mourning. The student, identified as a
+                20-year-old pursuing undergraduate studies,</p>
+            <div class="profile">
+                <img src="/images/nagi.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Vidhi</span>
+            </div>
+        </div>
+        <!-- (xx) News post 6 -->
+        <div class="post-box news" data-url="../html/pages-html/24.page.html">
+            <img src="/images/pages-img/f.png" alt="" class="post-img">
+            <h2 class="category">News</h2>
+            <h3 class="post-title">Bihar's First Sports University Gets UGC Recognition</h3>
+            <span class="post-date">January 15, 2025</span>
+            <p class="post-description">Bihar's first sports university has achieved a significant milestone by gaining
+                recognition from the University Grants Commission (UGC), marking a pivotal step in advancing sports
+                education in the state.</p>
+            <div class="profile">
+                <img src="/images/nagi.jpeg" alt="" class="profile-img">
+                <span class="profile-name">Prajapati</span>
+            </div>
+        </div>
+    </div>
+    <br id="recentPost">
+    <!-- Recent post -->
+    <div class="recent-posts">
+        <h2>Recent Posts</h2>
+        <button id="refresh-posts">Refresh</button>
+        <div class="recent-posts-container">
+            <!-- Cards will be dynamically added here -->
+        </div>
+        <button id="load-more">Load More</button>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container" id="About">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Welcome to SyntaxBlog, your trusted source for personal growth, mindfulness, and living a balanced
+                    life.
+                    We’re passionate about sharing insights, stories, and tips to inspire and inform our readers.
+                    Whether you’re here for DIY home projects or just exploring, we’re thrilled to have you with
+                    us!</p>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/login/"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/#"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D&mx=2"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/login/"><i class="bx bxl-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="../html/login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="sec contactBx">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class='bx bxs-map'></i></span>
+                        <span>160014 Chandigarh <br> Small flat Dhanas 319/b <br>India</span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-envelope'></i></span>
+                        <p><a href="mailto:codemyhobby9@gmail.com">PradeepGupta@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- notepad -->
+    <div class="notepad-icon"></div>
+
+    <div class="notepad draggable" id="notepad">
+        <textarea id="notepadContent" placeholder="Write something..."></textarea>
+        <div class="notepad-buttons">
+            <button class="save-btn" id="saveBtn">Save</button>
+            <button class="edit-btn" id="editBtn">Edit</button>
+            <button class="clear-btn" id="clearBtn">Clear</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/notepad.js"></script>
+    <script src="../js/recent-post.js"></script>
+</body>
+
+</html>

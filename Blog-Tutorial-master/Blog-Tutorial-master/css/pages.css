@@ -1,0 +1,133 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+/* root values */
+:root{
+  --container-color: #1a1e21;
+  --second-color: rgb(77, 92, 255);
+  --text-color: #172317;
+  --bg-color: #fff;
+}
+
+.blog-container{
+  margin-left: 7%;
+}
+.blog-container .blog-title{
+  margin-top: 10px;
+}
+.blog-container img{
+  width: 93%;
+  height: 500px;
+}
+
+.blog-container .blog-published{
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.blog-container .blog-published span{
+  color: gray;
+  font-size: medium;
+  font-weight: 300;
+  font-style: italic;
+}
+
+#first{
+  width: 93%;
+}
+
+
+::selection{
+    color: var(--bg-color);
+    background: var(--second-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding: 3rem 0 2rem;
+}
+
+.container{
+    max-width: 1700px;
+    margin: auto;
+    width: 100%;
+}
+
+a{
+    color: #fff;
+}
+
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+header.shadow{
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+    transition: .5s;
+}
+
+header.shadow .logo{
+    color: var(--text-color);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    
+    margin-left: 120px;
+}
+
+.logo span{
+    color: var(--second-color);
+}
+
+.home{
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    background: var(--second-color);
+    color: var(--bg-color);
+    margin-right: 120px;
+}
+
+.home:hover{
+    background: hsl(231, 98%, 56%);
+    transition: .5s;
+}
